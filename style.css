@@ -139,14 +139,42 @@ body::-webkit-scrollbar {
     .dyk-lbl {
       font-size: 2vw;
       margin-inline: auto;
-      margin-top: 10vh;
+      margin-top: 5vh;
       margin-bottom: auto;
     }
 
     .fun-fact {
-      height: 1fr;
-      width: 90%;
+      height: 24vh;
+      width: 70%;
       border: 1px solid black;
+      display: flex;
+      margin: auto;
+      margin: auto;
+      border-radius: 1vw;
+      padding: 0.5vw;
+
+      .fun-fact-cover {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: 200ms;
+
+        .fun-fact-title {
+          font-size: 1.4vw;
+          margin: auto;
+          text-align: center;
+        }
+      }
+
+      .fun-fact-info {
+        font-size: 0.7vw;
+      }
+    }
+
+    .fun-fact:hover {
+      .fun-fact-cover {
+        opacity: 0;
+      }
     }
   }
 }

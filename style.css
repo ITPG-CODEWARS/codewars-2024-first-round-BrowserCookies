@@ -4,6 +4,10 @@
   user-select: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -122,4 +126,28 @@ body::-webkit-scrollbar {
   height: 100vh;
   /* background: #17a16a; */
   background: #85aa9b;
+}
+
+.to-top-a {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  display: none;
+}
+
+.to-top-lbl {
+  display: flex;
+  background: #ffffff;
+  position: fixed;
+  width: 4vw;
+  height: 4vw;
+  bottom: 3vw;
+  right: 3vw;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 200ms;
+
+  img {
+    margin: auto;
+  }
 }

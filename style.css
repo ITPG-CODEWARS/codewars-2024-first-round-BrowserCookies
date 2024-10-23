@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   user-select: none;
+  font-family: "Roboto Slab";
 }
 
 html {
@@ -49,6 +50,7 @@ body::-webkit-scrollbar {
       margin-inline: auto;
       margin-top: auto;
       margin-bottom: 1vh;
+      transition: 200ms;
     }
 
     a {
@@ -126,23 +128,52 @@ body::-webkit-scrollbar {
   height: 100vh;
   /* background: #17a16a; */
   background: #85aa9b;
+
+  .white-side-bar {
+    width: 30vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+
+    .dyk-lbl {
+      font-size: 2vw;
+      margin-inline: auto;
+      margin-top: 10vh;
+      margin-bottom: auto;
+    }
+
+    .fun-fact {
+      height: 1fr;
+      width: 90%;
+      border: 1px solid black;
+    }
+  }
 }
 
 .to-top-a {
   width: fit-content;
   height: fit-content;
   cursor: pointer;
-  display: none;
+  position: fixed;
+  bottom: 0.5vw;
+  right: 3vw;
+  opacity: 0;
+  transition: 200ms;
+  pointer-events: none;
+}
+
+.to-top-a:hover {
+  .to-top-lbl {
+    scale: 1.1;
+  }
 }
 
 .to-top-lbl {
   display: flex;
   background: #ffffff;
-  position: fixed;
   width: 4vw;
   height: 4vw;
-  bottom: 3vw;
-  right: 3vw;
   cursor: pointer;
   border-radius: 50%;
   transition: 200ms;

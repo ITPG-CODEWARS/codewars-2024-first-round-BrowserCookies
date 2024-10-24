@@ -141,17 +141,18 @@ body::-webkit-scrollbar {
       margin-inline: auto;
       margin-top: 5vh;
       margin-bottom: auto;
+      color: #588b76;
     }
 
     .fun-fact {
       height: 24vh;
       width: 70%;
-      border: 1px solid black;
       display: flex;
       margin: auto;
       margin: auto;
       border-radius: 1vw;
       padding: 0.5vw;
+      transition: 200ms;
 
       .fun-fact-cover {
         display: flex;
@@ -163,18 +164,21 @@ body::-webkit-scrollbar {
           font-size: 1.4vw;
           margin: auto;
           text-align: center;
+          color: #588b76;
         }
       }
 
       .fun-fact-info {
         font-size: 0.7vw;
+        position: absolute;
+        transition: 200ms;
+        opacity: 0;
+        pointer-events: none;
       }
     }
 
     .fun-fact:hover {
-      .fun-fact-cover {
-        opacity: 0;
-      }
+      box-shadow: 8px 8px 50px black;
     }
   }
 }

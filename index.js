@@ -34,5 +34,3 @@ funFactCover.addEventListener("mouseout", () => {
               freight by land`;
   funFactTitle.style.fontSize = "1.4vw";
 });
-
-console.log(funFactCover);

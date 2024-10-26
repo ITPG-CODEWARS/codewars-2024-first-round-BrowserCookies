@@ -13,6 +13,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: row;
+  background: #85aa9b;
+  overflow: hidden;
 }
 
 @keyframes lblAnimation {
@@ -29,10 +31,11 @@ body {
   width: 4vw;
   height: 100vh;
   margin-right: auto;
-  transition: 300ms;
+  transition: 400ms;
   padding: 1vw;
   display: flex;
   flex-direction: column;
+  background: #ffffff;
 
   a {
     text-decoration: none;

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto Slab";
+  user-select: none;
 }
 
 html {
@@ -101,4 +102,47 @@ body {
       animation: lblAnimation 400ms;
     }
   }
+}
+
+.content {
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+
+  section {
+    width: 30vw;
+    height: fit-content;
+    margin-inline: auto;
+    margin-block: 3vw;
+    background: #ffffff;
+    color: #588b76;
+    padding: 2vw;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-weight: bold;
+      font-size: 2.5vw;
+    }
+
+    .info {
+      font-size: 1.1vw;
+    }
+  }
+
+  /* section:nth-child(1) {
+    margin-top: auto;
+  }
+
+  section:nth-child(3) {
+    margin-bottom: auto;
+  } */
+}
+
+.content::-webkit-scrollbar {
+  display: none;
 }

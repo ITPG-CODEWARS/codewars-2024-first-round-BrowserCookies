@@ -1,105 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto Slab";
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background: #85aa9b;
+  overflow: hidden;
+}
+
+@keyframes lblAnimation {
+  from {
+    opacity: 0;
   }
-  
-  html {
-    scroll-behavior: smooth;
+
+  to {
+    opacity: 1;
   }
-  
-  body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    background: #85aa9b;
-    overflow: hidden;
-  }
-  
-  @keyframes lblAnimation {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .side-nav-bar {
-    width: 4vw;
-    height: 100vh;
-    margin-right: auto;
-    transition: 400ms;
-    padding: 1vw;
-    display: flex;
-    flex-direction: column;
-    background: #ffffff;
-  
-    a {
-      text-decoration: none;
-      color: #588b76;
-      width: fit-content;
-      height: fit-content;
-      display: flex;
-      margin-inline: auto;
-      margin-block: 1vw;
-      padding: 1vw;
-      border-radius: 1vw;
-      transition: 200ms;
-      cursor: pointer;
-  
-      label {
-        margin-left: 1vw;
-        transition: 200ms;
-        display: none;
-        cursor: pointer;
-      }
-    }
-  
-    a[chosen="true"] {
-      color: white;
-      background: #588b76;
-  
-      svg {
-        path {
-          fill: white;
-        }
-      }
-    }
-  
-    a:nth-child(1) {
-      margin-top: auto;
-    }
-  
-    a:nth-child(4) {
-      margin-bottom: auto;
-    }
-  
-    a:hover {
-      color: white;
-      background: #588b76;
-  
-      svg {
-        path {
-          fill: white;
-        }
-      }
-    }
-  }
-  
-  .side-nav-bar:hover {
+}
+
+.side-nav-bar {
+  width: 4vw;
+  height: 100vh;
+  margin-right: auto;
+  transition: 400ms;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+
+  a {
+    text-decoration: none;
+    color: #588b76;
     width: fit-content;
-    padding-inline: 2vw;
-  
-    a {
-      width: 90%;
-  
-      label {
-        display: block;
-        animation: lblAnimation 400ms;
+    height: fit-content;
+    display: flex;
+    margin-inline: auto;
+    margin-block: 1vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    transition: 200ms;
+    cursor: pointer;
+
+    label {
+      margin-left: 1vw;
+      transition: 200ms;
+      display: none;
+      cursor: pointer;
+    }
+  }
+
+  a[chosen="true"] {
+    color: white;
+    background: #588b76;
+
+    svg {
+      path {
+        fill: white;
       }
     }
   }
-  
+
+  a:nth-child(1) {
+    margin-top: auto;
+  }
+
+  a:nth-child(4) {
+    margin-bottom: auto;
+  }
+
+  a:hover {
+    color: white;
+    background: #588b76;
+
+    svg {
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+
+.side-nav-bar:hover {
+  width: 12vw;
+  padding-inline: 2vw;
+
+  a {
+    width: 90%;
+
+    label {
+      display: block;
+      animation: lblAnimation 400ms;
+    }
+  }
+}

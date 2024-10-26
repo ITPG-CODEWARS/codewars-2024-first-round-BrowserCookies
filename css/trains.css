@@ -90,7 +90,7 @@
   }
   
   .side-nav-bar:hover {
-    width: fit-content;
+    width: 12vw;
     padding-inline: 2vw;
   
     a {

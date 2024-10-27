@@ -56,7 +56,7 @@ body {
 
     label {
       margin-left: 1vw;
-      transition: 200ms;
+      /* transition: 200ms; */
       display: none;
       cursor: pointer;
     }

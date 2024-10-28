@@ -113,7 +113,43 @@ body {
   margin: auto;
   overflow-y: scroll;
   display: flex;
+  flex-direction: row;
+
+  .locomotive-card {
+    width: 15vw;
+    height: 45vh;
+    background: #ffffff;
+    margin: auto;
+    border-radius: 1vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      margin-bottom: auto;
+      border-top-left-radius: 1vw;
+      border-top-right-radius: 1vw;
+    }
+
+    .title {
+      margin-inline: auto;
+      margin-bottom: 12vw;
+      font-size: 1.2vw;
+      color: #588b76;
+      font-weight: bold;
+    }
+  }
+}
+
+.locomotive-div {
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  overflow-y: scroll;
+  display: flex;
   flex-direction: column;
+  display: none;
 
   article {
     width: 30vw;

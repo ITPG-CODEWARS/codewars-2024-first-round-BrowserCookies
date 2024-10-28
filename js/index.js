@@ -3,6 +3,7 @@ const bottomLabel = document.querySelector(".bottom-label");
 const funFactCover = document.querySelector(".fun-fact-cover");
 const funFactInfo = document.querySelector(".fun-fact-info");
 const funFactTitle = document.querySelector(".fun-fact-title");
+const cards = document.querySelectorAll(".card");
 
 window.onscroll = () => {
   if (window.scrollY > 150) {
@@ -33,4 +34,18 @@ funFactCover.addEventListener("mouseout", () => {
   funFactTitle.textContent = `Trains are the most environmentally responsible way to ship
               freight by land`;
   funFactTitle.style.fontSize = "1.4vw";
+});
+
+cards.forEach((card) => {
+  card.onclick = () => {
+    const action = card.getAttribute("action");
+
+    if (action == "history") {
+      window.location.href = "./historyOfTrains.html";
+    } else if (action == "luxury") {
+      window.location.href = "./trains.html";
+    } else if (action == "locomotives") {
+      window.location.href = "./locomotives.html";
+    }
+  };
 });

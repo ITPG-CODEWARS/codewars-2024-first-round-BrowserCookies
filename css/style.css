@@ -240,6 +240,7 @@ body::-webkit-scrollbar {
       font-weight: bold;
       transform: translateY(70%);
       opacity: 0;
+      cursor: pointer;
       transition: 300ms;
     }
   }

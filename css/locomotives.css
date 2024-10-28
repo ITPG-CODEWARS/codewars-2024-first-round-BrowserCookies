@@ -124,6 +124,7 @@ body {
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    transition: 200ms;
 
     img {
       width: 100%;
@@ -134,11 +135,35 @@ body {
 
     .title {
       margin-inline: auto;
-      margin-bottom: 12vw;
+      margin-bottom: auto;
       font-size: 1.2vw;
       color: #588b76;
       font-weight: bold;
+      cursor: pointer;
     }
+
+    .train-stat {
+      margin-inline: auto;
+      margin-block: 0.4vw;
+      color: #588b76;
+      font-weight: bold;
+      cursor: pointer;
+
+      svg {
+        path {
+          fill: #588b76;
+        }
+      }
+    }
+
+    .train-stat:nth-child(5) {
+      margin-bottom: 4vw;
+    }
+  }
+
+  .locomotive-card:hover {
+    transform: translateY(-20px);
+    scale: 1.02;
   }
 }
 
@@ -183,6 +208,7 @@ body {
     color: #588b76;
     padding: 2vw;
     border-radius: 1vw;
+    font-size: 1.1vw;
   }
 
   h1 {
@@ -199,38 +225,33 @@ body {
   }
 }
 
+.locomotive-div::-webkit-scrollbar {
+  display: none;
+}
+
 .content::-webkit-scrollbar {
   display: none;
 }
 
-.to-top-a {
-  width: fit-content;
-  height: fit-content;
+.back-btn {
+  width: 4.1vw;
+  height: 4.1vw;
   cursor: pointer;
   position: fixed;
   bottom: 0.5vw;
   right: 3vw;
   opacity: 0;
-  transition: 200ms;
+  transition: 300ms;
   pointer-events: none;
-}
-
-.to-top-a:hover {
-  .to-top-lbl {
-    scale: 1.1;
-  }
-}
-
-.to-top-lbl {
-  display: flex;
   background: #ffffff;
-  width: 4vw;
-  height: 4vw;
-  cursor: pointer;
   border-radius: 50%;
-  transition: 200ms;
+  display: flex;
 
   img {
     margin: auto;
   }
+}
+
+.back-btn:hover {
+  scale: 1.1;
 }

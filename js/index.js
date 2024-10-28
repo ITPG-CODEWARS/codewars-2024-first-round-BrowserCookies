@@ -7,7 +7,7 @@ const funFactTitle = document.querySelector(".fun-fact-title");
 window.onscroll = () => {
   if (window.scrollY > 150) {
     toTopBtn.style.opacity = "1";
-    toTopBtn.style.bottom = "3vw";
+    toTopBtn.style.bottom = "2.6vw";
     toTopBtn.style.pointerEvents = "all";
 
     bottomLabel.style.opacity = "0";
